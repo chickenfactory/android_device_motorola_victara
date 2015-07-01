@@ -444,18 +444,6 @@ service iprenew_eth0 /system/bin/dhcpcd -nBK
    disabled
    oneshot
 
-service atvc_core /system/bin/dbvc_atvc_property_set
-   class core
-   user mot_atvc
-   group mot_tpapi
-   oneshot
-
-service atvc /system/bin/dbvc_atvc_property_set
-   class late_start
-   user mot_atvc
-   group mot_tpapi
-   oneshot
-
 service qe /xbin/qe /system
    class main
    seclabel u:r:qe:s0
