@@ -145,6 +145,7 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     file.te \
     fsg_file.te \
+    gpsd.te \
     healthd.te \
     init_shell.te \
     init.te \
